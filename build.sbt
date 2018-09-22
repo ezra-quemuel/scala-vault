@@ -2,10 +2,10 @@ import sbt.Keys._
 
 name := "vault"
 
-lazy val uscalaVersion = "0.5.1"
-lazy val specs2Version = "3.8.8"
-lazy val circeVersion = "0.7.0"
-lazy val dispatchVersion = "0.11.3"
+lazy val uscalaVersion = "0.11.0"
+lazy val specs2Version = "4.3.4"
+lazy val circeVersion = "0.9.3"
+lazy val dispatchVersion = "0.13.4"
 lazy val startVaultTask = TaskKey[Unit](
   "startVaultTask",
   "Start dev vault server for integration test"
@@ -38,7 +38,7 @@ val pomInfo = (
 
 lazy val commonSettings = Seq(
   version := "0.4.2-SNAPSHOT",
-  scalaVersion := "2.11.11",
+  scalaVersion := "2.12.6",
   organization := "janstenpickle.vault",
   pomExtra := pomInfo,
   autoAPIMappings := true,
